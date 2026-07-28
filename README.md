@@ -4,8 +4,8 @@ A fast, browser-based character and Alternate Advancement (AA) planner for the
 EverQuest Legends multiclass server.
 
 > [!IMPORTANT]
-> The Angular foundation is initialized, but the build-planning features and
-> production game data are not implemented yet.
+> The first UI prototype is implemented with interactive build and progression
+> controls. Compatibility behavior and production game data are not implemented yet.
 
 See [vision.md](vision.md) for the detailed product requirements, design
 principles, delivery phases, and acceptance criteria. Coding agents should also
@@ -42,6 +42,13 @@ Implemented:
 - SCSS styles
 - Vitest unit-test configuration
 - Prettier configuration
+- Responsive, accessible application header and main build form
+- Interactive race, deity, primary, secondary, tertiary, level, and earned-AA controls
+- Dark-mode interface enabled by default
+
+The selector entries in the current prototype are a small, provisional set for
+layout and interaction testing. They are not yet sourced production data, and
+compatibility filtering is not applied.
 
 Planned application features:
 
