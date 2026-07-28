@@ -45,6 +45,7 @@ Implemented:
 - Responsive, accessible application header and main build form
 - Interactive race, deity, primary, secondary, tertiary, level, and earned-AA controls
 - Dark-mode interface enabled by default
+- GitHub Actions validation and deployment to GitHub Pages from `master`
 
 The selector entries in the current prototype are a small, provisional set for
 layout and interaction testing. They are not yet sourced production data, and
@@ -59,7 +60,7 @@ Planned application features:
 - Level-aware AA purchasing, refunds, prerequisites, and automatic grants
 - Deterministic URL state and Discord-emote sharing
 - Runtime and CI validation for static game data
-- Playwright end-to-end tests and GitHub Pages deployment
+- Playwright end-to-end tests
 
 ## Technology versions
 
@@ -158,6 +159,18 @@ npm run watch
 
 The application uses hash-based routing, so routes are compatible with static
 hosting and do not require server-side rewrite rules.
+
+## Deploy
+
+Pushes to `master` run `.github/workflows/webpack.yml`, which installs the
+lockfile-exact dependencies, checks formatting, runs unit tests, builds with the
+`/eql-build-planner/` base path, and deploys the browser output to GitHub Pages.
+Pull requests run the same validation without deploying.
+
+In the repository's GitHub **Settings → Pages**, set **Source** to **GitHub
+Actions**. The deployed project site is:
+
+<https://trentbullard.github.io/eql-build-planner/>
 
 ## Test
 
