@@ -8,6 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "test:watch": "ng test --watch",
+    "validate:data": "node scripts/validate-game-data.mjs",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },

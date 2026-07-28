@@ -40,6 +40,9 @@ jobs:
       - name: Check formatting
         run: npm run format:check
 
+      - name: Validate static game data
+        run: npm run validate:data
+
       - name: Run unit tests
         run: npm test -- --watch=false
 

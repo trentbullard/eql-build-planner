@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "gameDataVersion": "2026-07-28",
+  "datasetStatus": "complete",
+  "verificationStatus": "community-reported",
+  "lastVerified": null,
+  "sources": [
+    {
+      "id": "eql-tools-picker-data",
+      "type": "community-reference",
+      "label": "EQL Tools Trio Builder data",
+      "url": "https://eqltools.com/picker/data.js",
+      "accessedOn": "2026-07-28",
+      "snapshotId": "charcreate-379a3c0cf4b0",
+      "notes": "EQL Tools describes race, primary-class, and deity combinations as client-observed from the character-creation screen."
+    }
+  ],
+  "classes": [
+    {
+      "id": "warrior",
+      "name": "Warrior",
+      "abbreviation": "WAR",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "cleric",
+      "name": "Cleric",
+      "abbreviation": "CLR",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "paladin",
+      "name": "Paladin",
+      "abbreviation": "PAL",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "ranger",
+      "name": "Ranger",
+      "abbreviation": "RNG",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "shadow-knight",
+      "name": "Shadow Knight",
+      "abbreviation": "SHD",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "druid",
+      "name": "Druid",
+      "abbreviation": "DRU",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "monk",
+      "name": "Monk",
+      "abbreviation": "MNK",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "bard",
+      "name": "Bard",
+      "abbreviation": "BRD",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "rogue",
+      "name": "Rogue",
+      "abbreviation": "ROG",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "shaman",
+      "name": "Shaman",
+      "abbreviation": "SHM",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "necromancer",
+      "name": "Necromancer",
+      "abbreviation": "NEC",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "wizard",
+      "name": "Wizard",
+      "abbreviation": "WIZ",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "magician",
+      "name": "Magician",
+      "abbreviation": "MAG",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "enchanter",
+      "name": "Enchanter",
+      "abbreviation": "ENC",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "beastlord",
+      "name": "Beastlord",
+      "abbreviation": "BST",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "berserker",
+      "name": "Berserker",
+      "abbreviation": "BER",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "gameDataVersion": "2026-07-28",
+  "datasetStatus": "complete",
+  "verificationStatus": "community-reported",
+  "lastVerified": null,
+  "sources": [
+    {
+      "id": "eql-tools-picker-data",
+      "type": "community-reference",
+      "label": "EQL Tools Trio Builder data",
+      "url": "https://eqltools.com/picker/data.js",
+      "accessedOn": "2026-07-28",
+      "snapshotId": "charcreate-379a3c0cf4b0",
+      "notes": "EQL Tools describes race, primary-class, and deity combinations as client-observed from the character-creation screen."
+    }
+  ],
+  "races": [
+    {
+      "id": "human",
+      "name": "Human",
+      "abbreviation": "HUM",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "barbarian",
+      "name": "Barbarian",
+      "abbreviation": "BAR",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "erudite",
+      "name": "Erudite",
+      "abbreviation": "ERU",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "wood-elf",
+      "name": "Wood Elf",
+      "abbreviation": "ELF",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "high-elf",
+      "name": "High Elf",
+      "abbreviation": "HIE",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "dark-elf",
+      "name": "Dark Elf",
+      "abbreviation": "DEF",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "half-elf",
+      "name": "Half Elf",
+      "abbreviation": "HEF",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "dwarf",
+      "name": "Dwarf",
+      "abbreviation": "DWF",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "troll",
+      "name": "Troll",
+      "abbreviation": "TRL",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "ogre",
+      "name": "Ogre",
+      "abbreviation": "OGR",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "halfling",
+      "name": "Halfling",
+      "abbreviation": "HFL",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "gnome",
+      "name": "Gnome",
+      "abbreviation": "GNM",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "iksar",
+      "name": "Iksar",
+      "abbreviation": "IKS",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "kerran",
+      "name": "Kerran",
+      "abbreviation": "KER",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "froglok",
+      "name": "Froglok",
+      "abbreviation": "FRG",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    }
+  ]
+}

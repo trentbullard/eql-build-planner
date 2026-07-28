@@ -1,0 +1,656 @@
+{
+  "schemaVersion": 1,
+  "gameDataVersion": "2026-07-28",
+  "datasetStatus": "complete",
+  "verificationStatus": "community-reported",
+  "lastVerified": null,
+  "scope": "initial-primary-selection",
+  "sources": [
+    {
+      "id": "eql-tools-picker-data",
+      "type": "community-reference",
+      "label": "EQL Tools Trio Builder data",
+      "url": "https://eqltools.com/picker/data.js",
+      "accessedOn": "2026-07-28",
+      "snapshotId": "charcreate-379a3c0cf4b0",
+      "notes": "EQL Tools describes race, primary-class, and deity combinations as client-observed from the character-creation screen."
+    },
+    {
+      "id": "project-1999-race-class-matrix",
+      "type": "community-reference",
+      "label": "Project 1999 Sortable Race Class Matrix",
+      "url": "https://wiki.project1999.com/Sortable_Race_Class_Matrix",
+      "accessedOn": "2026-07-28",
+      "notes": "Classic/P99 baseline only. It does not cover EQL additions and is not the source of EQL-only rows."
+    }
+  ],
+  "dataSourceIds": ["eql-tools-picker-data"],
+  "referenceSourceIds": ["project-1999-race-class-matrix"],
+  "primaryOptions": [
+    {
+      "raceId": "barbarian",
+      "classId": "berserker",
+      "deityIds": ["agnostic", "rallos-zek", "the-tribunal"]
+    },
+    {
+      "raceId": "barbarian",
+      "classId": "beastlord",
+      "deityIds": ["mithaniel-marr", "the-tribunal"]
+    },
+    {
+      "raceId": "barbarian",
+      "classId": "rogue",
+      "deityIds": ["agnostic", "bristlebane", "the-tribunal"]
+    },
+    {
+      "raceId": "barbarian",
+      "classId": "shaman",
+      "deityIds": ["the-tribunal"]
+    },
+    {
+      "raceId": "barbarian",
+      "classId": "warrior",
+      "deityIds": ["agnostic", "rallos-zek", "the-tribunal"]
+    },
+    {
+      "raceId": "dark-elf",
+      "classId": "cleric",
+      "deityIds": ["innoruuk"]
+    },
+    {
+      "raceId": "dark-elf",
+      "classId": "enchanter",
+      "deityIds": ["agnostic", "innoruuk"]
+    },
+    {
+      "raceId": "dark-elf",
+      "classId": "magician",
+      "deityIds": ["agnostic", "innoruuk"]
+    },
+    {
+      "raceId": "dark-elf",
+      "classId": "necromancer",
+      "deityIds": ["innoruuk"]
+    },
+    {
+      "raceId": "dark-elf",
+      "classId": "ranger",
+      "deityIds": ["bertoxxulous", "innoruuk"]
+    },
+    {
+      "raceId": "dark-elf",
+      "classId": "rogue",
+      "deityIds": ["agnostic", "bristlebane", "innoruuk"]
+    },
+    {
+      "raceId": "dark-elf",
+      "classId": "shadow-knight",
+      "deityIds": ["innoruuk"]
+    },
+    {
+      "raceId": "dark-elf",
+      "classId": "warrior",
+      "deityIds": ["agnostic", "innoruuk", "rallos-zek"]
+    },
+    {
+      "raceId": "dark-elf",
+      "classId": "wizard",
+      "deityIds": ["agnostic", "innoruuk", "solusek-ro"]
+    },
+    {
+      "raceId": "dwarf",
+      "classId": "berserker",
+      "deityIds": ["agnostic", "brell-serilis", "bristlebane"]
+    },
+    {
+      "raceId": "dwarf",
+      "classId": "cleric",
+      "deityIds": ["brell-serilis"]
+    },
+    {
+      "raceId": "dwarf",
+      "classId": "paladin",
+      "deityIds": ["brell-serilis"]
+    },
+    {
+      "raceId": "dwarf",
+      "classId": "rogue",
+      "deityIds": ["agnostic", "brell-serilis", "bristlebane"]
+    },
+    {
+      "raceId": "dwarf",
+      "classId": "warrior",
+      "deityIds": ["agnostic", "brell-serilis"]
+    },
+    {
+      "raceId": "erudite",
+      "classId": "cleric",
+      "deityIds": ["cazic-thule", "prexus", "quellious"]
+    },
+    {
+      "raceId": "erudite",
+      "classId": "enchanter",
+      "deityIds": ["agnostic", "prexus", "quellious"]
+    },
+    {
+      "raceId": "erudite",
+      "classId": "magician",
+      "deityIds": ["agnostic", "prexus", "quellious"]
+    },
+    {
+      "raceId": "erudite",
+      "classId": "necromancer",
+      "deityIds": ["cazic-thule"]
+    },
+    {
+      "raceId": "erudite",
+      "classId": "paladin",
+      "deityIds": ["prexus", "quellious"]
+    },
+    {
+      "raceId": "erudite",
+      "classId": "shadow-knight",
+      "deityIds": ["cazic-thule"]
+    },
+    {
+      "raceId": "erudite",
+      "classId": "wizard",
+      "deityIds": ["agnostic", "prexus", "quellious", "solusek-ro"]
+    },
+    {
+      "raceId": "froglok",
+      "classId": "cleric",
+      "deityIds": ["innoruuk", "mithaniel-marr"]
+    },
+    {
+      "raceId": "froglok",
+      "classId": "monk",
+      "deityIds": ["mithaniel-marr"]
+    },
+    {
+      "raceId": "froglok",
+      "classId": "necromancer",
+      "deityIds": ["innoruuk"]
+    },
+    {
+      "raceId": "froglok",
+      "classId": "paladin",
+      "deityIds": ["mithaniel-marr"]
+    },
+    {
+      "raceId": "froglok",
+      "classId": "rogue",
+      "deityIds": ["innoruuk"]
+    },
+    {
+      "raceId": "froglok",
+      "classId": "shadow-knight",
+      "deityIds": ["innoruuk"]
+    },
+    {
+      "raceId": "froglok",
+      "classId": "shaman",
+      "deityIds": ["mithaniel-marr"]
+    },
+    {
+      "raceId": "froglok",
+      "classId": "warrior",
+      "deityIds": ["mithaniel-marr"]
+    },
+    {
+      "raceId": "froglok",
+      "classId": "wizard",
+      "deityIds": ["mithaniel-marr"]
+    },
+    {
+      "raceId": "gnome",
+      "classId": "cleric",
+      "deityIds": ["bertoxxulous", "brell-serilis", "bristlebane"]
+    },
+    {
+      "raceId": "gnome",
+      "classId": "enchanter",
+      "deityIds": ["agnostic", "bertoxxulous", "brell-serilis"]
+    },
+    {
+      "raceId": "gnome",
+      "classId": "magician",
+      "deityIds": ["agnostic", "bertoxxulous", "brell-serilis"]
+    },
+    {
+      "raceId": "gnome",
+      "classId": "necromancer",
+      "deityIds": ["bertoxxulous"]
+    },
+    {
+      "raceId": "gnome",
+      "classId": "paladin",
+      "deityIds": ["brell-serilis"]
+    },
+    {
+      "raceId": "gnome",
+      "classId": "rogue",
+      "deityIds": ["agnostic", "bertoxxulous", "brell-serilis", "bristlebane"]
+    },
+    {
+      "raceId": "gnome",
+      "classId": "shadow-knight",
+      "deityIds": ["bertoxxulous"]
+    },
+    {
+      "raceId": "gnome",
+      "classId": "warrior",
+      "deityIds": ["agnostic", "bertoxxulous", "brell-serilis", "rallos-zek"]
+    },
+    {
+      "raceId": "gnome",
+      "classId": "wizard",
+      "deityIds": ["agnostic", "bertoxxulous", "brell-serilis", "solusek-ro"]
+    },
+    {
+      "raceId": "half-elf",
+      "classId": "bard",
+      "deityIds": [
+        "agnostic",
+        "brell-serilis",
+        "bristlebane",
+        "erollisi-marr",
+        "karana",
+        "mithaniel-marr",
+        "prexus",
+        "quellious",
+        "rallos-zek",
+        "rodcet-nife",
+        "solusek-ro",
+        "the-tribunal",
+        "tunare",
+        "veeshan"
+      ]
+    },
+    {
+      "raceId": "half-elf",
+      "classId": "druid",
+      "deityIds": ["karana", "tunare"]
+    },
+    {
+      "raceId": "half-elf",
+      "classId": "paladin",
+      "deityIds": ["erollisi-marr", "karana", "mithaniel-marr", "rodcet-nife", "tunare"]
+    },
+    {
+      "raceId": "half-elf",
+      "classId": "ranger",
+      "deityIds": ["karana", "tunare"]
+    },
+    {
+      "raceId": "half-elf",
+      "classId": "rogue",
+      "deityIds": [
+        "agnostic",
+        "bertoxxulous",
+        "bristlebane",
+        "erollisi-marr",
+        "karana",
+        "rodcet-nife",
+        "tunare"
+      ]
+    },
+    {
+      "raceId": "half-elf",
+      "classId": "warrior",
+      "deityIds": [
+        "agnostic",
+        "bertoxxulous",
+        "erollisi-marr",
+        "innoruuk",
+        "karana",
+        "mithaniel-marr",
+        "prexus",
+        "rallos-zek",
+        "rodcet-nife",
+        "the-tribunal",
+        "tunare"
+      ]
+    },
+    {
+      "raceId": "halfling",
+      "classId": "cleric",
+      "deityIds": ["bristlebane"]
+    },
+    {
+      "raceId": "halfling",
+      "classId": "druid",
+      "deityIds": ["karana"]
+    },
+    {
+      "raceId": "halfling",
+      "classId": "paladin",
+      "deityIds": ["karana"]
+    },
+    {
+      "raceId": "halfling",
+      "classId": "ranger",
+      "deityIds": ["karana"]
+    },
+    {
+      "raceId": "halfling",
+      "classId": "rogue",
+      "deityIds": ["agnostic", "brell-serilis", "bristlebane"]
+    },
+    {
+      "raceId": "halfling",
+      "classId": "warrior",
+      "deityIds": ["agnostic", "brell-serilis", "rallos-zek"]
+    },
+    {
+      "raceId": "high-elf",
+      "classId": "cleric",
+      "deityIds": ["tunare"]
+    },
+    {
+      "raceId": "high-elf",
+      "classId": "enchanter",
+      "deityIds": ["agnostic", "erollisi-marr", "karana", "mithaniel-marr", "tunare"]
+    },
+    {
+      "raceId": "high-elf",
+      "classId": "magician",
+      "deityIds": ["agnostic", "erollisi-marr", "karana", "mithaniel-marr", "tunare"]
+    },
+    {
+      "raceId": "high-elf",
+      "classId": "paladin",
+      "deityIds": ["tunare"]
+    },
+    {
+      "raceId": "high-elf",
+      "classId": "wizard",
+      "deityIds": ["agnostic", "erollisi-marr", "karana", "mithaniel-marr", "solusek-ro", "tunare"]
+    },
+    {
+      "raceId": "human",
+      "classId": "bard",
+      "deityIds": [
+        "agnostic",
+        "brell-serilis",
+        "bristlebane",
+        "erollisi-marr",
+        "karana",
+        "mithaniel-marr",
+        "prexus",
+        "quellious",
+        "rallos-zek",
+        "rodcet-nife",
+        "solusek-ro",
+        "the-tribunal",
+        "tunare",
+        "veeshan"
+      ]
+    },
+    {
+      "raceId": "human",
+      "classId": "cleric",
+      "deityIds": [
+        "bertoxxulous",
+        "erollisi-marr",
+        "innoruuk",
+        "karana",
+        "mithaniel-marr",
+        "rodcet-nife"
+      ]
+    },
+    {
+      "raceId": "human",
+      "classId": "druid",
+      "deityIds": ["karana", "tunare"]
+    },
+    {
+      "raceId": "human",
+      "classId": "enchanter",
+      "deityIds": [
+        "agnostic",
+        "bertoxxulous",
+        "erollisi-marr",
+        "innoruuk",
+        "karana",
+        "mithaniel-marr",
+        "rodcet-nife"
+      ]
+    },
+    {
+      "raceId": "human",
+      "classId": "magician",
+      "deityIds": [
+        "agnostic",
+        "bertoxxulous",
+        "erollisi-marr",
+        "innoruuk",
+        "karana",
+        "mithaniel-marr",
+        "rodcet-nife"
+      ]
+    },
+    {
+      "raceId": "human",
+      "classId": "monk",
+      "deityIds": ["agnostic", "quellious"]
+    },
+    {
+      "raceId": "human",
+      "classId": "necromancer",
+      "deityIds": ["bertoxxulous", "innoruuk"]
+    },
+    {
+      "raceId": "human",
+      "classId": "paladin",
+      "deityIds": ["erollisi-marr", "karana", "mithaniel-marr", "rodcet-nife"]
+    },
+    {
+      "raceId": "human",
+      "classId": "ranger",
+      "deityIds": ["karana", "tunare"]
+    },
+    {
+      "raceId": "human",
+      "classId": "rogue",
+      "deityIds": [
+        "agnostic",
+        "bertoxxulous",
+        "bristlebane",
+        "erollisi-marr",
+        "innoruuk",
+        "karana",
+        "rodcet-nife"
+      ]
+    },
+    {
+      "raceId": "human",
+      "classId": "shadow-knight",
+      "deityIds": ["bertoxxulous", "innoruuk"]
+    },
+    {
+      "raceId": "human",
+      "classId": "warrior",
+      "deityIds": [
+        "agnostic",
+        "bertoxxulous",
+        "erollisi-marr",
+        "innoruuk",
+        "karana",
+        "mithaniel-marr",
+        "rallos-zek",
+        "rodcet-nife"
+      ]
+    },
+    {
+      "raceId": "human",
+      "classId": "wizard",
+      "deityIds": [
+        "agnostic",
+        "bertoxxulous",
+        "erollisi-marr",
+        "innoruuk",
+        "karana",
+        "mithaniel-marr",
+        "rodcet-nife",
+        "solusek-ro"
+      ]
+    },
+    {
+      "raceId": "iksar",
+      "classId": "beastlord",
+      "deityIds": ["cazic-thule"]
+    },
+    {
+      "raceId": "iksar",
+      "classId": "monk",
+      "deityIds": ["cazic-thule"]
+    },
+    {
+      "raceId": "iksar",
+      "classId": "necromancer",
+      "deityIds": ["cazic-thule"]
+    },
+    {
+      "raceId": "iksar",
+      "classId": "shadow-knight",
+      "deityIds": ["cazic-thule"]
+    },
+    {
+      "raceId": "iksar",
+      "classId": "shaman",
+      "deityIds": ["cazic-thule"]
+    },
+    {
+      "raceId": "iksar",
+      "classId": "warrior",
+      "deityIds": ["cazic-thule"]
+    },
+    {
+      "raceId": "kerran",
+      "classId": "berserker",
+      "deityIds": ["agnostic"]
+    },
+    {
+      "raceId": "kerran",
+      "classId": "bard",
+      "deityIds": ["agnostic"]
+    },
+    {
+      "raceId": "kerran",
+      "classId": "beastlord",
+      "deityIds": ["agnostic"]
+    },
+    {
+      "raceId": "kerran",
+      "classId": "druid",
+      "deityIds": ["agnostic"]
+    },
+    {
+      "raceId": "kerran",
+      "classId": "rogue",
+      "deityIds": ["agnostic"]
+    },
+    {
+      "raceId": "kerran",
+      "classId": "shaman",
+      "deityIds": ["agnostic"]
+    },
+    {
+      "raceId": "kerran",
+      "classId": "warrior",
+      "deityIds": ["agnostic"]
+    },
+    {
+      "raceId": "ogre",
+      "classId": "berserker",
+      "deityIds": ["agnostic", "cazic-thule", "rallos-zek"]
+    },
+    {
+      "raceId": "ogre",
+      "classId": "beastlord",
+      "deityIds": ["rallos-zek"]
+    },
+    {
+      "raceId": "ogre",
+      "classId": "shadow-knight",
+      "deityIds": ["cazic-thule", "rallos-zek"]
+    },
+    {
+      "raceId": "ogre",
+      "classId": "shaman",
+      "deityIds": ["rallos-zek"]
+    },
+    {
+      "raceId": "ogre",
+      "classId": "warrior",
+      "deityIds": ["agnostic", "cazic-thule", "rallos-zek"]
+    },
+    {
+      "raceId": "troll",
+      "classId": "berserker",
+      "deityIds": ["agnostic", "cazic-thule", "innoruuk", "rallos-zek"]
+    },
+    {
+      "raceId": "troll",
+      "classId": "beastlord",
+      "deityIds": ["cazic-thule", "innoruuk"]
+    },
+    {
+      "raceId": "troll",
+      "classId": "shadow-knight",
+      "deityIds": ["cazic-thule", "innoruuk"]
+    },
+    {
+      "raceId": "troll",
+      "classId": "shaman",
+      "deityIds": ["cazic-thule", "innoruuk"]
+    },
+    {
+      "raceId": "troll",
+      "classId": "warrior",
+      "deityIds": ["agnostic", "cazic-thule", "innoruuk", "rallos-zek"]
+    },
+    {
+      "raceId": "wood-elf",
+      "classId": "bard",
+      "deityIds": [
+        "agnostic",
+        "brell-serilis",
+        "bristlebane",
+        "erollisi-marr",
+        "karana",
+        "mithaniel-marr",
+        "prexus",
+        "quellious",
+        "rallos-zek",
+        "rodcet-nife",
+        "solusek-ro",
+        "the-tribunal",
+        "tunare",
+        "veeshan"
+      ]
+    },
+    {
+      "raceId": "wood-elf",
+      "classId": "druid",
+      "deityIds": ["tunare"]
+    },
+    {
+      "raceId": "wood-elf",
+      "classId": "ranger",
+      "deityIds": ["tunare"]
+    },
+    {
+      "raceId": "wood-elf",
+      "classId": "rogue",
+      "deityIds": ["agnostic", "bristlebane", "karana", "tunare"]
+    },
+    {
+      "raceId": "wood-elf",
+      "classId": "warrior",
+      "deityIds": ["agnostic", "karana", "rallos-zek", "tunare"]
+    }
+  ],
+  "secondaryTertiaryExclusions": []
+}

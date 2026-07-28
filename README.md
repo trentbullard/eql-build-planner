@@ -44,12 +44,16 @@ Implemented:
 - Prettier configuration
 - Responsive, accessible application header and main build form
 - Interactive race, deity, primary, secondary, tertiary, level, and earned-AA controls
+- Complete race, class, and deity entity files for the current sourced snapshot
+- Exact race/primary-class/deity compatibility joins with indexed pure lookup logic
+- Static-data validation locally and in CI
 - Dark-mode interface enabled by default
 - GitHub Actions validation and deployment to GitHub Pages from `master`
 
-The selector entries in the current prototype are a small, provisional set for
-layout and interaction testing. They are not yet sourced production data, and
-compatibility filtering is not applied.
+The selector entries in the current prototype are still a small, provisional
+set for layout and interaction testing. The complete sourced files under
+`public/data` are not loaded by the controls yet, so compatibility filtering is
+not applied in the interface.
 
 Planned application features:
 
@@ -163,9 +167,10 @@ hosting and do not require server-side rewrite rules.
 ## Deploy
 
 Pushes to `master` run `.github/workflows/webpack.yml`, which installs the
-lockfile-exact dependencies, checks formatting, runs unit tests, builds with the
-`/eql-build-planner/` base path, and deploys the browser output to GitHub Pages.
-Pull requests run the same validation without deploying.
+lockfile-exact dependencies, checks formatting, validates static game data,
+runs unit tests, builds with the `/eql-build-planner/` base path, and deploys
+the browser output to GitHub Pages. Pull requests run the same validation
+without deploying.
 
 In the repository's GitHub **Settings → Pages**, set **Source** to **GitHub
 Actions**. The deployed project site is:
@@ -190,6 +195,12 @@ Tests use Angular's unit-test builder with Vitest and jsdom. Place tests beside
 the code they cover using the `*.spec.ts` suffix.
 
 Playwright is part of the planned test strategy but is not installed yet.
+
+Validate the static entity and compatibility files:
+
+```bash
+npm run validate:data
+```
 
 ## Format
 
@@ -221,6 +232,7 @@ The current application entry points are:
 | `src/app/app.routes.ts` | Application route definitions                              |
 | `src/styles.scss`       | Global styles and Angular Material theme                   |
 | `public/`               | Static files copied into the build                         |
+| `public/data/`          | Versioned static entities and compatibility joins          |
 | `angular.json`          | Angular build, serve, test, style, and asset configuration |
 | `tsconfig.json`         | Shared strict TypeScript and Angular compiler options      |
 
@@ -293,6 +305,11 @@ All game content should use stable IDs and include provenance, verification
 status, and version metadata where practical. Changing or uncertain Legends
 mechanics must be represented as data so corrections do not require rewriting
 application logic.
+
+The proposed file responsibilities and client-side indexing strategy are
+documented in [`public/data/README.md`](public/data/README.md). Files marked
+with `"datasetStatus": "complete"` contain full coverage of their cited
+snapshot, but their verification status must still be presented accurately.
 
 Research priority:
 
