@@ -114,12 +114,66 @@ h1 {
   line-height: 1.65;
 }
 
+.data-banner {
+  min-height: 48px;
+  margin: -18px 0 24px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: var(--muted);
+  background: #1c1b21;
+  font-size: 0.85rem;
+
+  mat-icon {
+    flex: 0 0 auto;
+    color: var(--accent);
+  }
+
+  &--error {
+    border-color: #9d6670;
+    color: #f4c7ce;
+
+    mat-icon {
+      color: #f4a6b3;
+    }
+  }
+}
+
 .build-form {
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 18px;
   background: var(--paper);
   box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
+}
+
+.conflict-summary {
+  padding: 18px 42px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  border-bottom: 1px solid #76585f;
+  color: #f4d7dc;
+  background: #2b2024;
+
+  mat-icon {
+    flex: 0 0 auto;
+    color: #f4a6b3;
+  }
+
+  strong {
+    font-size: 0.88rem;
+  }
+
+  ul {
+    margin: 5px 0 0;
+    padding-left: 18px;
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
 }
 
 .form-section {
@@ -174,6 +228,10 @@ h1 {
 
 mat-form-field {
   width: 100%;
+}
+
+.option-reason {
+  font-size: 0.78rem;
 }
 
 .progress-grid {
@@ -306,6 +364,10 @@ mat-slider {
 
   .form-section {
     padding: 28px 22px;
+  }
+
+  .conflict-summary {
+    padding: 16px 22px;
   }
 
   .field-grid--two,

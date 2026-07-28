@@ -2,7 +2,7 @@
 
 The data directory contains complete entity coverage and an exact compatibility
 snapshot for initial race, primary-class, and deity selection. The application
-does not load these files yet.
+loads and validates these files in the browser before enabling the selectors.
 
 ## File responsibilities
 

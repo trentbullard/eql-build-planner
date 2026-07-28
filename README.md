@@ -43,23 +43,25 @@ Implemented:
 - Vitest unit-test configuration
 - Prettier configuration
 - Responsive, accessible application header and main build form
-- Interactive race, deity, primary, secondary, tertiary, level, and earned-AA controls
+- Data-backed race, deity, primary, secondary, tertiary, level, and earned-AA controls
 - Complete race, class, and deity entity files for the current sourced snapshot
 - Exact race/primary-class/deity compatibility joins with indexed pure lookup logic
+- Bidirectional option disabling with compatibility and duplicate-class explanations
+- Runtime parsing with visible loading and data-error states
 - Static-data validation locally and in CI
 - Dark-mode interface enabled by default
 - GitHub Actions validation and deployment to GitHub Pages from `master`
 
-The selector entries in the current prototype are still a small, provisional
-set for layout and interaction testing. The complete sourced files under
-`public/data` are not loaded by the controls yet, so compatibility filtering is
-not applied in the interface.
+The selectors load the complete sourced files under `public/data`. Race,
+primary-class, and deity availability is evaluated bidirectionally from the
+exact join, and duplicate classes are disabled across the three class slots.
+Incompatible options remain visible with an explanation. Existing selections
+are preserved if later choices create a conflict.
 
 Planned application features:
 
-- Bidirectional race, class, and deity compatibility filtering
 - Per-selector capability and playstyle tags
-- Conflict explanations and targeted conflict resolution
+- One-action targeted conflict resolution
 - Combined-build strengths, weaknesses, and capability analysis
 - Level-aware AA purchasing, refunds, prerequisites, and automatic grants
 - Deterministic URL state and Discord-emote sharing

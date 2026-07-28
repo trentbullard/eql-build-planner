@@ -24,7 +24,33 @@
     </p>
   </section>
 
+  @if (dataStatus() === 'loading' || dataStatus() === 'idle') {
+    <p class="data-banner" role="status" aria-live="polite">
+      <mat-icon aria-hidden="true">hourglass_top</mat-icon>
+      Loading character options…
+    </p>
+  } @else if (dataStatus() === 'error') {
+    <div class="data-banner data-banner--error" role="alert">
+      <mat-icon aria-hidden="true">error</mat-icon>
+      <span>{{ dataError() }}</span>
+    </div>
+  }
+
   <form class="build-form" aria-label="Character build">
+    @if (conflictMessages().length > 0) {
+      <div class="conflict-summary" role="alert" aria-live="polite">
+        <mat-icon aria-hidden="true">warning</mat-icon>
+        <div>
+          <strong>Resolve the current conflict</strong>
+          <ul>
+            @for (message of conflictMessages(); track message) {
+              <li>{{ message }}</li>
+            }
+          </ul>
+        </div>
+      </div>
+    }
+
     <section class="form-section" aria-labelledby="identity-title">
       <div class="section-heading">
         <span class="section-number" aria-hidden="true">01</span>
@@ -37,20 +63,38 @@
       <div class="field-grid field-grid--two">
         <mat-form-field appearance="outline" subscriptSizing="dynamic">
           <mat-label>Race</mat-label>
-          <mat-select [value]="build().race" (selectionChange)="setSelection('race', $event)">
+          <mat-select
+            [value]="build().race"
+            [disabled]="dataStatus() !== 'ready'"
+            (selectionChange)="setSelection('race', $event)"
+          >
             <mat-option [value]="null">Not selected</mat-option>
-            @for (race of races; track race.id) {
-              <mat-option [value]="race.id">{{ race.label }}</mat-option>
+            @for (race of raceOptions(); track race.id) {
+              <mat-option [value]="race.id" [disabled]="!race.enabled">
+                {{ race.label }}
+                @if (race.reason !== null) {
+                  <span class="option-reason"> — {{ race.reason }}</span>
+                }
+              </mat-option>
             }
           </mat-select>
         </mat-form-field>
 
         <mat-form-field appearance="outline" subscriptSizing="dynamic">
           <mat-label>Deity</mat-label>
-          <mat-select [value]="build().deity" (selectionChange)="setSelection('deity', $event)">
+          <mat-select
+            [value]="build().deity"
+            [disabled]="dataStatus() !== 'ready'"
+            (selectionChange)="setSelection('deity', $event)"
+          >
             <mat-option [value]="null">Not selected</mat-option>
-            @for (deity of deities; track deity.id) {
-              <mat-option [value]="deity.id">{{ deity.label }}</mat-option>
+            @for (deity of deityOptions(); track deity.id) {
+              <mat-option [value]="deity.id" [disabled]="!deity.enabled">
+                {{ deity.label }}
+                @if (deity.reason !== null) {
+                  <span class="option-reason"> — {{ deity.reason }}</span>
+                }
+              </mat-option>
             }
           </mat-select>
         </mat-form-field>
@@ -71,11 +115,17 @@
           <mat-label>Primary class</mat-label>
           <mat-select
             [value]="build().primaryClass"
+            [disabled]="dataStatus() !== 'ready'"
             (selectionChange)="setSelection('primaryClass', $event)"
           >
             <mat-option [value]="null">Not selected</mat-option>
-            @for (characterClass of classes; track characterClass.id) {
-              <mat-option [value]="characterClass.id">{{ characterClass.label }}</mat-option>
+            @for (characterClass of primaryClassOptions(); track characterClass.id) {
+              <mat-option [value]="characterClass.id" [disabled]="!characterClass.enabled">
+                {{ characterClass.label }}
+                @if (characterClass.reason !== null) {
+                  <span class="option-reason"> — {{ characterClass.reason }}</span>
+                }
+              </mat-option>
             }
           </mat-select>
         </mat-form-field>
@@ -84,11 +134,17 @@
           <mat-label>Secondary class</mat-label>
           <mat-select
             [value]="build().secondaryClass"
+            [disabled]="dataStatus() !== 'ready'"
             (selectionChange)="setSelection('secondaryClass', $event)"
           >
             <mat-option [value]="null">Not selected</mat-option>
-            @for (characterClass of classes; track characterClass.id) {
-              <mat-option [value]="characterClass.id">{{ characterClass.label }}</mat-option>
+            @for (characterClass of secondaryClassOptions(); track characterClass.id) {
+              <mat-option [value]="characterClass.id" [disabled]="!characterClass.enabled">
+                {{ characterClass.label }}
+                @if (characterClass.reason !== null) {
+                  <span class="option-reason"> — {{ characterClass.reason }}</span>
+                }
+              </mat-option>
             }
           </mat-select>
         </mat-form-field>
@@ -97,11 +153,17 @@
           <mat-label>Tertiary class</mat-label>
           <mat-select
             [value]="build().tertiaryClass"
+            [disabled]="dataStatus() !== 'ready'"
             (selectionChange)="setSelection('tertiaryClass', $event)"
           >
             <mat-option [value]="null">Not selected</mat-option>
-            @for (characterClass of classes; track characterClass.id) {
-              <mat-option [value]="characterClass.id">{{ characterClass.label }}</mat-option>
+            @for (characterClass of tertiaryClassOptions(); track characterClass.id) {
+              <mat-option [value]="characterClass.id" [disabled]="!characterClass.enabled">
+                {{ characterClass.label }}
+                @if (characterClass.reason !== null) {
+                  <span class="option-reason"> — {{ characterClass.reason }}</span>
+                }
+              </mat-option>
             }
           </mat-select>
         </mat-form-field>
@@ -188,7 +250,16 @@
     </section>
 
     <footer class="form-footer">
-      <p>Sample options for layout testing. Compatibility rules are not applied yet.</p>
+      <p>
+        @if (dataVersion() !== null) {
+          Game-data version {{ dataVersion() }} · {{ dataVerificationLabel() }}. Incompatible
+          options remain visible with reasons.
+        } @else if (dataStatus() === 'loading' || dataStatus() === 'idle') {
+          Loading character data…
+        } @else {
+          Character data is unavailable.
+        }
+      </p>
       <button mat-button type="button" (click)="resetBuild()">
         <mat-icon>restart_alt</mat-icon>
         Reset
