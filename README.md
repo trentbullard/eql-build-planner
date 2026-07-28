@@ -7,6 +7,9 @@ EverQuest Legends multiclass server.
 > This project is in its initial planning and setup stage. The application is
 > not yet available for use.
 
+See [vision.md](vision.md) for the detailed product requirements, design
+principles, delivery phases, and initial acceptance criteria.
+
 ## Overview
 
 The planner will let players experiment with a complete build:
