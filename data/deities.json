@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "gameDataVersion": "2026-07-28",
+  "datasetStatus": "complete",
+  "verificationStatus": "community-reported",
+  "lastVerified": null,
+  "sources": [
+    {
+      "id": "eql-tools-picker-data",
+      "type": "community-reference",
+      "label": "EQL Tools Trio Builder data",
+      "url": "https://eqltools.com/picker/data.js",
+      "accessedOn": "2026-07-28",
+      "snapshotId": "charcreate-379a3c0cf4b0",
+      "notes": "EQL Tools describes race, primary-class, and deity combinations as client-observed from the character-creation screen."
+    }
+  ],
+  "deities": [
+    {
+      "id": "agnostic",
+      "name": "Agnostic",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "bertoxxulous",
+      "name": "Bertoxxulous",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "brell-serilis",
+      "name": "Brell Serilis",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "bristlebane",
+      "name": "Bristlebane",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "cazic-thule",
+      "name": "Cazic-Thule",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "erollisi-marr",
+      "name": "Erollisi Marr",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "innoruuk",
+      "name": "Innoruuk",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "karana",
+      "name": "Karana",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "mithaniel-marr",
+      "name": "Mithaniel Marr",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "prexus",
+      "name": "Prexus",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "quellious",
+      "name": "Quellious",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "rallos-zek",
+      "name": "Rallos Zek",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "rodcet-nife",
+      "name": "Rodcet Nife",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "solusek-ro",
+      "name": "Solusek Ro",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "the-tribunal",
+      "name": "The Tribunal",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "tunare",
+      "name": "Tunare",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    },
+    {
+      "id": "veeshan",
+      "name": "Veeshan",
+      "discordEmote": null,
+      "tagAssignments": [],
+      "sourceIds": ["eql-tools-picker-data"],
+      "verificationStatus": "community-reported",
+      "lastVerified": null
+    }
+  ]
+}
