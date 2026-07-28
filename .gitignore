@@ -1,8 +1,10 @@
 # Dependencies
 node_modules/
 
-# Angular build output and cache
+# Angular build output and caches
 dist/
+out-tsc/
+bazel-out/
 .angular/
 
 # Test and coverage output
@@ -10,6 +12,7 @@ coverage/
 playwright-report/
 test-results/
 blob-report/
+__screenshots__/
 
 # Logs
 *.log
@@ -28,22 +31,35 @@ pnpm-debug.log*
 
 # Editors and IDEs
 .idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
 .vscode/*
-!.vscode/extensions.json
-!.vscode/launch.json
 !.vscode/settings.json
 !.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/mcp.json
+.history/*
 *.code-workspace
+
+# Tool caches and temporary files
+.cache/
+.tmp/
+tmp/
+.sass-cache/
+connect.lock
+typings/
+*.swp
+*.swo
+*~
 
 # Operating-system files
 .DS_Store
 Thumbs.db
 Desktop.ini
-
-# Temporary files
-.cache/
-.tmp/
-tmp/
-*.swp
-*.swo
-*~

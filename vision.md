@@ -39,21 +39,36 @@ The application should be:
 
 ### Recommended stack
 
-- **Angular 22 or the latest stable Angular release at implementation time**
-- **Angular Material** matching the selected Angular major version
+- **Angular 22.0.8**, initialized on 2026-07-28
+- **Angular Material 22.0.6** and CDK 22.0.6
 - Standalone components
 - Strict TypeScript
 - Angular Signals and computed state for reactive filtering and analysis
 - Signal Forms or typed reactive forms, depending on production readiness and project preference
 - Angular Router for application navigation
-- Static JSON data files loaded from the application assets
-- Vitest or the Angular-recommended current unit-test runner
+- Static JSON data files loaded from `public/data`
+- **Vitest 4.1.10** through the Angular unit-test builder
 - Playwright for important end-to-end workflows
-- ESLint and Prettier
+- ESLint and **Prettier 3.9.6**
 - GitHub Actions for validation, build, and deployment
 - GitHub Pages for initial hosting, with optional custom domain and HTTPS
 
 This should be a static single-page application. It must not require a database, API server, authentication service, or server-side rendering.
+
+### Initialized toolchain
+
+The initial application scaffold uses:
+
+- Node.js 24.15.0, pinned by Volta in `package.json`
+- npm 11.12.1, pinned by Volta in `package.json`
+- Angular framework and CLI/build tools 22.0.8
+- Angular Material and CDK 22.0.6
+- TypeScript 6.0.3
+- RxJS 7.8.2
+- Vitest 4.1.10 with jsdom 28.1.0
+- Prettier 3.9.6
+
+The lockfile is the authority for exact installed package versions. See `README.md` for installation, development, testing, formatting, and production-build commands.
 
 ### Suggested repository structure
 
@@ -73,26 +88,26 @@ src/
     shared/
       components/
       pipes/
-  assets/
-    data/
-      manifest.json
-      races.json
-      classes.json
-      deities.json
-      tags.json
-      compatibility.json
-      abilities.json
-      aa/
-        general.json
-        archetypes.json
-        classes/
-          bard.json
-          cleric.json
-          ...
-      rules/
-        build-analysis.json
-        contradictions.json
-        unlocks.json
+public/
+  data/
+    manifest.json
+    races.json
+    classes.json
+    deities.json
+    tags.json
+    compatibility.json
+    abilities.json
+    aa/
+      general.json
+      archetypes.json
+      classes/
+        bard.json
+        cleric.json
+        ...
+    rules/
+      build-analysis.json
+      contradictions.json
+      unlocks.json
 ```
 
 The precise file split may change, but the principle should remain: **game data belongs in data files; reusable evaluation behavior belongs in typed application code.**
@@ -804,9 +819,9 @@ That fast, transparent feedback loop is the central experience of the project.
 
 This document intentionally treats changing Legends mechanics as data rather than permanent application logic.
 
-At the time this document was prepared:
+At the time this document was prepared and the application was initialized:
 
-- Angular 22 was the current stable Angular major.
+- Angular 22 was the current stable Angular major; the project uses Angular 22.0.8 and Angular Material 22.0.6.
 - GitHub Pages supported static sites, HTTPS, and optional custom domains.
 - Community documentation described Legends as a three-class system with classic-style restrictions focused primarily on race, primary class, and deity.
 

@@ -43,6 +43,40 @@ Preserve these invariants:
 - Unverified or subjective information must never be presented as confirmed
   game mechanics.
 
+## Current repository toolchain
+
+The application was initialized with:
+
+- Node.js 24.15.0 (pinned by Volta in `package.json`)
+- npm 11.12.1 (pinned by Volta in `package.json`)
+- Angular framework and CLI/build tools 22.0.8
+- Angular Material and CDK 22.0.6
+- TypeScript 6.0.3
+- RxJS 7.8.2
+- Vitest 4.1.10 with jsdom 28.1.0
+- Prettier 3.9.6
+
+Treat `package.json` as the dependency-range authority and `package-lock.json`
+as the exact-version authority. Do not update framework or tool versions
+incidentally. When intentionally changing one, update `README.md`,
+`vision.md`, the `volta` and `packageManager` fields as applicable, and this
+section.
+
+The verified repository commands are:
+
+```bash
+npm install
+npm start
+npm run build
+npm run watch
+npm test
+npm run test:watch
+npm run format
+npm run format:check
+```
+
+ESLint and Playwright remain planned and have no command until installed.
+
 ## Before changing code
 
 1. Read `vision.md` and the relevant existing files.
